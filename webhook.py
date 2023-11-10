@@ -25,7 +25,7 @@ def build_clone_url() -> str:
 @app.route("/")
 def webhook():
     # Use the system password to escalate privileges
-    password = f'echo WWWrk1476_ | '
+    password = f'echo {config["SYSTEM_PASSWORD"]} | '
 
     # Change the directory and branch to the target ones
     cd_checkout = f'cd {config["TARGET_DIRECTORY"]} &&' + \
