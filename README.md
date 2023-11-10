@@ -8,5 +8,9 @@ The logic is as follows:
 - After which Github sends a signal to our backend, which in turn automatically pulls the target branch.
 - The last step is to build the application, in this case the backend builds the frontend service.
 
-One of the cases where this idea can help you is if you have your code stored in
-Github, but the policy of the server on which the application is to be deployed limits the possibilities.
+One of the cases where this idea can help you is if you have your code stored in Github, but the policy of the server on which the application is to be deployed limits the possibilities.
+
+TODO:
+
+- [ ] Logging
+- [ ] Error handling and reportin
