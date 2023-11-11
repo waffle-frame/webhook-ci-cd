@@ -10,6 +10,42 @@ The logic is as follows:
 
 One of the cases where this idea can help you is if you have your code stored in Github, but the policy of the server on which the application is to be deployed limits the possibilities.
 
+## Installation
+
+### Clone project from GitHub
+
+```bash
+git clone https://github.com/waffle-frame/webhook-ci-cd
+cd webhook-ci-cd
+```
+
+### Setting up the environment
+
+Initialization virtual environment
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+Install requirements
+
+```bash
+pip3 install -r requirements.txt
+```
+
+Setting environment variables
+
+```bash
+cp example.env .env
+```
+
+### Run
+
+```bash
+python3 webhook.py
+```
+
 TODO:
 
 - [ ] Logging
