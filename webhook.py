@@ -22,7 +22,7 @@ def build_clone_url() -> str:
     return url
 
 
-@app.route("/")
+@app.route("/", methods=["POST"])
 def webhook():
     # Use the system password to escalate privileges
     password = f'echo {config["SYSTEM_PASSWORD"]} | '
